@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+	padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth; /* 添加 smooth 属性以实现平滑滚动效果 */
+}
+
+body{
+	background-color: #333;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(230, 230, 230, 1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4B5563;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track, body.dark::-webkit-scrollbar-thumb {
+    background-color: #eee;
+}
+
+
+
+/* 导航栏 */
+.nav{
+	position: fixed;
+	top: 30px;
+	width: 95%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 65px;
+	background-color:rgba(51, 51, 51, 0);
+	border-radius: 15px;
+	transition: all 0.7s;
+	z-index: 999;
+}
+/* 鼠标悬停 */
+.nav:hover{
+	background-color:rgba(51, 51, 51, 1);
+	transition: all 1s;
+}
+
+/* 首页背景大图 */
+.centerbg{
+	width: 100%;
+	height: 100vh;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	z-index: -1;
+}
+
+.nav-box{
+	height: 60px;
+	float: right;
+}
+
+/* 头像样式 */
+.avatar {
+	height: 40px;
+	width: 40px;
+	background-image: url("../img/avatar1.jpg");
+	background-size: 100%;
+	margin: 12.5px 27.5px 12.5px 12.5px;
+	border-radius: 50%;
+	float: right;
+	cursor: pointer;
+	transition: transform 0.7s;
+}
+
+.avatar:hover {
+	transform: rotate(360deg);
+}
+
+.nav-son {
+	float: left;
+	line-height: 50px;
+	padding-top: 7.5px;
+	text-shadow: 2px 2px 5px #333;
+	margin: 0 15px;
+	position: relative;
+}
+
+/* 字体颜色变化 */
+.nav-son:hover .nav-anchor{
+	color: rgb(0, 125, 255);
+	transition:all 0.5s;
+}
+
+/* 创建底部边框 */
+.nav-son::before {
+	content: "";
+	position: absolute;
+	bottom: -3px; /* 将伪元素定位到导航栏项的底部 */
+	left: 0;
+	width: 100%;
+	height: 4px; /* 边框高度 */
+	border-radius: 15px;
+	background-color: rgb(0, 125, 255);
+	transform: scaleX(0); /* 初始状态下将宽度缩放为0，隐藏边框 */
+	transform-origin: left center; /* 设置变换原点为左侧中心 */
+	transition: transform 0.3s; /* 设置过渡属性和过渡时间 */
+}
+
+/* 鼠标悬停时显示底部边框 */
+.nav-son:hover::before {
+	transform: scaleX(1); /* 将宽度缩放为1，显示边框 */
+}
+
+
+.container {
+		position: relative;
+		top: 30%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+.avatar-big {
+		width: 130px;
+		height: 130px;
+		background-image: url("../img/avatar1.jpg");
+		background-size: cover;
+		border-radius: 50%;
+		transition: transform 1s;
+}
+
+.avatar-big:hover{
+	transform: rotate(360deg);
+}
+
+.content {
+		width: 500px;
+		height: 65px;
+		border-radius: 20px;
+		margin-top: 30px;
+		background-color: rgba(51, 51, 51, 0.7); /* 使用 rgba() 设置背景微透明 */
+		backdrop-filter: blur(5px); /* 添加高斯模糊效果 */
+}
+
+.content p{
+		color: #eee;
+		line-height: 65px;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.8s;
+}
+
+.content:hover p{
+	color: #FCCD00;
+	transition: 0.8s;
+}
+
+.bottom{
+	width: 820px;
+	margin: 0 auto;
+}
+
+.title {
+	position: relative;
+	width: 820px;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+h1 {
+	position: absolute;
+	bottom: 0;
+	color: #eee;
+	font-weight: 400;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 2.5em;
+	height: 4px;
+	border-radius: 15px;
+	background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+	transform: translateY(50%);
+}
+
+/* 文章模块 */
+.article{
+	width: 820px;
+	height: 300px;
+	margin: 40px 0;
+	border-radius: 15px;
+	box-shadow: 0 1px 35px -8px rgba(26, 26, 26, 0.6);
+	transition: 0.6s;
+}
+
+.article:hover{
+	transition: 0.8s;
+	box-shadow: 0 1px 35px -8px rgba(252,185,0,1);
+}
+
+/* 展示图片 */
+.display-pic{
+	width: 450px;
+	height: 300px;
+	border-radius: 15px;
+	transition: 0.8s;
+}
+
+.display-pic:hover{
+	transition: 0.8s;
+	scale: 1.15;
+}
+
+
+/* 展示图片容器 */
+.exhibit{
+	width: 450px;
+	height: 300px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+
+/* 左浮动 */
+.left {
+	float: left;
+	}
+/* 右浮动 */
+.right {
+	float: right;
+	}
+
+/* 介绍 */
+.introduce{
+	width:370px;
+	height: 300px;
+}
+
+/* 介绍容器 */
+.post-content{
+	margin: 20px auto;
+	width: 300px;
+	height: 240px;
+}
+
+/* 文章发布日期 */
+.date{
+	font-size: 12px;
+	color: #888;
+}
+
+.date::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 文章标题 */
+.content-title{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content-title a{
+	color: #999999;
+	transition: 0.5s;
+}
+
+.content-title a:hover{
+	color: #ffe066;
+	transition: 0.5s;
+}
+
+.content-title::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 文章信息 */
+.post-meta{
+	font-size: 12px;
+	color: #888;
+	cursor: default;
+}
+
+.comments-number{
+	margin: 0px 5px;
+}
+
+.post-meta span{
+	transition: 0.5s;
+	cursor: default;
+}
+
+.post-meta span:hover{
+	color: #ffe066;
+	transition: 0.5s;
+}
+
+.post-main{
+	margin-top: 10px;
+	color: #888;
+	cursor: default;
+}
+
+@media only screen and (max-width: 820px) {
+	.bottom{
+		width: 450px;
+	}
+	.article{
+		width: 450px;
+		height: 560px;
+		margin: 30px auto;
+	}
+	
+	.article::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	.content{
+		width: 450px;
+	}
+	
+	.introduce{
+		width: 450px;
+		height: 270px;
+		
+	}
+	
+
+
+}
