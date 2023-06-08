@@ -6,7 +6,7 @@
 
 
 
-![image-20230608215400298](readme-pic\image-20230608215400298.png)
+![image-20230608215400298](readme-pic/image-20230608215400298.png)
 
 
 
@@ -75,9 +75,9 @@
 
 - #### 当向下滚动时，导航栏会发生变化
 
-  ![image-20230608210012034](readme-pic\image-20230608210012034.png)
+  ![image-20230608210012034](readme-pic/image-20230608210012034.png)
 
-  ![image-20230608210053664](readme-pic\image-20230608210053664.png)
+  ![image-20230608210053664](readme-pic/image-20230608210053664.png)
 
   滚动回去则会变回原样，这里利用js实现
 
@@ -129,7 +129,7 @@
 
 - #### 每次刷新页面时，首页所有图片顺序全部随机加载
 
-![image-20230608210327820](readme-pic\image-20230608210327820.png)
+![image-20230608210327820](readme-pic/image-20230608210327820.png)
 
 实现原理：根据图片数量，随机生成路径
 
@@ -148,7 +148,7 @@ window.addEventListener('load', function() {
 
 - #### 首页底部为文章部分，当鼠标放到文章区域，会有阴影特效，当鼠标放到图片上，图片会有微放大的过渡动画，均利用css实现
 
-  ![image-20230608210728410](readme-pic\image-20230608210728410.png)
+  ![image-20230608210728410](readme-pic/image-20230608210728410.png)
 
   
 
@@ -206,7 +206,7 @@ window.addEventListener('load', function() {
 
 ## 二、文章页面
 
-![image-20230608211002018](readme-pic\image-20230608211002018.png)
+![image-20230608211002018](readme-pic/image-20230608211002018.png)
 
 
 
@@ -214,7 +214,7 @@ window.addEventListener('load', function() {
 
 
 
-![image-20230608211137674](readme-pic\image-20230608211137674.png)
+![image-20230608211137674](readme-pic/image-20230608211137674.png)
 
 
 
@@ -259,13 +259,13 @@ window.addEventListener('load', function() {
 
   实现粒子动画效果，并可通过鼠标拖动控制进度
 
-![image-20230608212019991](readme-pic\image-20230608212019991.png)
+![image-20230608212019991](readme-pic/image-20230608212019991.png)
 
 
 
 ## 四、技术栈
 
-![image-20230608212417690](readme-pic\image-20230608212417690.png)
+![image-20230608212417690](readme-pic/image-20230608212417690.png)
 
 
 
@@ -348,7 +348,7 @@ window.addEventListener('load', function() {
 
   
 
-![image-20230608213112949](readme-pic\image-20230608213112949.png)
+![image-20230608213112949](readme-pic/image-20230608213112949.png)
 
 ```
 @media only screen and (max-width: 820px) {
@@ -384,7 +384,7 @@ window.addEventListener('load', function() {
 
 
 
-![image-20230608213155574](readme-pic\image-20230608213155574.png)
+![image-20230608213155574](readme-pic/image-20230608213155574.png)
 
 ```
 @media only screen and (max-width: 820px) {
@@ -405,7 +405,7 @@ window.addEventListener('load', function() {
 
 
 
-![image-20230608213242947](readme-pic\image-20230608213242947.png)
+![image-20230608213242947](readme-pic/image-20230608213242947.png)
 
 ```
 @media only screen and (max-width: 820px) {
@@ -420,7 +420,7 @@ window.addEventListener('load', function() {
 
 
 
-![image-20230608213331464](readme-pic\image-20230608213331464.png)
+![image-20230608213331464](readme-pic/image-20230608213331464.png)
 
 ```
 @media only screen and (max-width: 820px) {
@@ -451,3 +451,8 @@ window.addEventListener('load', function() {
 }
 ```
 
+
+
+## 六、项目以上传至Github
+
+- #### https://github.com/Xiumuzaidiao/web-blog
