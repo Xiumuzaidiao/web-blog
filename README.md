@@ -453,6 +453,6 @@ window.addEventListener('load', function() {
 
 
 
-## 六、项目以上传至Github
+## 六、项目已上传至Github
 
 - #### https://github.com/Xiumuzaidiao/web-blog
