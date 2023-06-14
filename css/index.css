@@ -1,6 +1,7 @@
 *{
     margin: 0px;
 	padding: 0px;
+	transition: 0.7s;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 }
 
 body{
-	background-color: #333;
+	background-color: rgba(255,255,255, 1);
 }
 
 a{
@@ -50,6 +51,8 @@ a{
 	background-color:rgba(51, 51, 51, 1);
 	transition: all 1s;
 }
+
+
 
 /* 首页背景大图 */
 .centerbg{
@@ -148,12 +151,12 @@ a{
 		height: 65px;
 		border-radius: 20px;
 		margin-top: 30px;
-		background-color: rgba(51, 51, 51, 0.7); /* 使用 rgba() 设置背景微透明 */
+		background-color: rgba(255,255,255, 0.7); /* 使用 rgba() 设置背景微透明 */
 		backdrop-filter: blur(5px); /* 添加高斯模糊效果 */
 }
 
 .content p{
-		color: #eee;
+		color: #424242;
 		line-height: 65px;
 		text-align: center;
 		cursor: pointer;
@@ -180,7 +183,7 @@ a{
 h1 {
 	position: absolute;
 	bottom: 0;
-	color: #eee;
+	color: rgba(51, 51, 51, 1);
 	font-weight: 400;
 	margin-bottom: 10px;
 	font-size: 20px;
